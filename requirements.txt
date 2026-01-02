@@ -1,0 +1,14 @@
+streamlit
+langgraph
+langchain-core
+langchain-groq
+chromadb
+requests
+beautifulsoup4
+arxiv
+pdfplumber
+pandas
+numpy
+scipy
+plotly
+pydantic
