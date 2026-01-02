@@ -13,3 +13,5 @@ scipy
 plotly
 pydantic
 tavily
+feedparser
+python-dotenv
