@@ -1,3 +1,8 @@
+import sys
+import os
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(ROOT_DIR)
 
 from dotenv import load_dotenv
 load_dotenv()   # 🔑 MUST BE FIRST
