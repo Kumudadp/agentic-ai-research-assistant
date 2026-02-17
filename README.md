@@ -1,95 +1,96 @@
-🧠 Autonomous Agentic AI Research Assistant
+# 🧠 Autonomous Agentic AI Research Assistant
 
 A fully autonomous, multi-agent AI research system that discovers emerging scientific domains, formulates original research questions, gathers real public data, performs experiments, critiques its own results, quantifies uncertainty, and produces a structured mini research paper — with zero human input after startup.
 
 This project was developed as part of an Agentic AI Research Challenge, emphasizing true agency, multi-agent collaboration, self-criticism, and responsible uncertainty handling.
 
-🚀 Key Capabilities
+## 🚀 Key Capabilities
 
-🔍 Autonomous Domain Discovery (post-2024 emerging domains)
+- 🔍 Autonomous Domain Discovery (post-2024 emerging domains)
 
-❓ Original Research Question Generation
+- ❓ Original Research Question Generation
 
-🌐 Real Data Acquisition from Public Sources
+- 🌐 Real Data Acquisition from Public Sources
 
-🧪 Lightweight but Real Experimental Analysis
+- 🧪 Lightweight but Real Experimental Analysis
 
-🧨 Self-Critique & Iterative Reasoning
+- 🧨 Self-Critique & Iterative Reasoning
 
-🎯 Confidence & Uncertainty Quantification
+- 🎯 Confidence & Uncertainty Quantification
 
-📝 Automated Mini Research Paper Generation
+- 📝 Automated Mini Research Paper Generation
 
-📊 Interactive Visualizations
+- 📊 Interactive Visualizations
 
-📦 Dockerized & Cloud Deployable
+- 📦 Dockerized & Cloud Deployable
 
-🧩 System Architecture (High Level)
+- 🧩 System Architecture (High Level)
 
 The system is orchestrated using LangGraph, enabling explicit agent collaboration via a shared state.
 
-Core Agents:
+## Core Agents:
 
-Domain Scout Agent – Discovers emerging research domains using real-time web signals
+- Domain Scout Agent – Discovers emerging research domains using real-time web signals
 
-Question Generator Agent – Produces novel, non-trivial research questions
+- Question Generator Agent – Produces novel, non-trivial research questions
 
-Data Alchemist Agent – Collects and cleans real public datasets (ArXiv + web signals)
+- Data Alchemist Agent – Collects and cleans real public datasets (ArXiv + web signals)
 
-Experiment Designer Agent – Performs exploratory and statistical experiments
+- Experiment Designer Agent – Performs exploratory and statistical experiments
 
-Critic Agent – Attacks assumptions, methodology, and evidence
+- Critic Agent – Attacks assumptions, methodology, and evidence
 
-Uncertainty Agent – Computes confidence score and abstains when needed
+- Uncertainty Agent – Computes confidence score and abstains when needed
 
-Paper Writer Agent – Generates a structured research paper using verified evidence only
+- Paper Writer Agent – Generates a structured research paper using verified evidence only
 
-🛠️ Tech Stack
-Core Frameworks
+## 🛠️ Tech Stack
 
-Python 3.10+
+### Core Frameworks
 
-LangGraph – Multi-agent orchestration
+- Python 3.10+
 
-Streamlit – Interactive UI & live demo
+- LangGraph – Multi-agent orchestration
 
-Pydantic – Typed state management
+- Streamlit – Interactive UI & live demo
 
-AI & Data
+- Pydantic – Typed state management
 
-Groq (Llama-3.1-8B) – LLM backbone (free tier)
+- AI & Data
 
-ArXiv API – Public academic data
+- Groq (Llama-3.1-8B) – LLM backbone (free tier)
 
-Web Signals – Trend discovery
+- ArXiv API – Public academic data
 
-Data & Visualization
+- Web Signals – Trend discovery
 
-Pandas – Data processing
+### Data & Visualization
 
-Plotly – Interactive charts
+- Pandas – Data processing
 
-Deployment
+- Plotly – Interactive charts
 
-Docker
+### Deployment
 
-Railway (Free Tier)
+- Docker
 
-🧠 Design Principles
+- Railway (Free Tier)
 
-❌ No hardcoded domains or datasets
+## 🧠 Design Principles
 
-❌ No single-agent or RAG-only pipelines
+- ❌ No hardcoded domains or datasets
 
-❌ No fabricated results
+- ❌ No single-agent or RAG-only pipelines
 
-✅ Evidence-driven reasoning
+- ❌ No fabricated results
 
-✅ Explicit agent responsibilities
+- ✅ Evidence-driven reasoning
 
-✅ Confidence-aware conclusions
+- ✅ Explicit agent responsibilities
 
-📂 Project Structure
+- ✅ Confidence-aware conclusions
+
+## 📂 Project Structure
 agentic-ai-research-assistant/
 │
 ├── app.py                     # Streamlit UI entry point
@@ -115,25 +116,25 @@ agentic-ai-research-assistant/
 ├── Dockerfile
 └── README.md
 
-▶️ How It Works (End-to-End Flow)
+## ▶️ How It Works (End-to-End Flow)
 
-User clicks “Start Research”
+1. User clicks “Start Research”
 
-Domain Scout discovers emerging domains
+2. Domain Scout discovers emerging domains
 
-Question Generator formulates original research questions
+3. Question Generator formulates original research questions
 
-Data Alchemist fetches real public data
+4. Data Alchemist fetches real public data
 
-Experiment Designer runs exploratory experiments
+5. Experiment Designer runs exploratory experiments
 
-Critic evaluates validity and limitations
+6. Critic evaluates validity and limitations
 
-Paper Writer generates final mini research paper
+7. Paper Writer generates final mini research paper
 
-Results + visualizations are displayed live
+8. Results + visualizations are displayed live
 
-⚠️ Responsible AI Behavior
+### ⚠️ Responsible AI Behavior
 
 If confidence < 0.6, the system abstains from strong conclusions
 
@@ -141,21 +142,21 @@ All claims are tied to real evidence
 
 Limitations & future work are explicitly stated
 
-🌐 Live Demo
+### 🌐 Live Demo
 
 Once deployed, the system runs end-to-end with no human input required after pressing Start Research.
 
-📌 Notes
+### 📌 Notes
 
 This system prioritizes reasoning, transparency, and safety over flashy claims.
 
 Experiments are intentionally simple but honest, reflecting real-world constraints.
 
-📄 License
+### 📄 License
 
 This project is for educational and evaluation purposes.
 
-▶️ EXECUTION STEPS
+### ▶️ EXECUTION STEPS
 
 🔹 1. Clone the Repository
 git clone https://github.com/<your-username>/agentic-ai-research-assistant.git
@@ -176,13 +177,12 @@ Create a .env file or export variables directly:
 GROQ_API_KEY=your_groq_api_key_here
 
 🔹 5. Run the Application (Local)
-streamlit run app.py
 
+streamlit run app.py
 
 Open browser at:
 
 http://localhost:8501
-
 
 Click “Start Research” and observe autonomous execution.
 
@@ -206,20 +206,21 @@ Add environment variable:
 GROQ_API_KEY
 
 
-Deploy 🚀
+## Deploy 🚀
 
 Railway automatically builds and runs the Docker container.
 
-✅ Expected Output
+## ✅ Expected Output
 
-Emerging domain discovery
+- Emerging domain discovery
 
-Original research questions
+- Original research questions
 
-Real data analysis
+- Real data analysis
 
-Experimental visualizations
+- Experimental visualizations
 
-Mini research paper (Markdown)
+- Mini research paper (Markdown)
 
-Confidence score + abstain logic
+- Confidence score + abstain logic
+
