@@ -159,15 +159,22 @@ This project is for educational and evaluation purposes.
 ### ▶️ EXECUTION STEPS
 
 🔹 1. Clone the Repository
+
 git clone https://github.com/<your-username>/agentic-ai-research-assistant.git
+
 cd agentic-ai-research-assistant
 
 🔹 2. Create Virtual Environment (Recommended)
+
 python -m venv .venv
+
 source .venv/bin/activate     # Linux / Mac
+
 .venv\Scripts\activate        # Windows
 
+
 🔹 3. Install Dependencies
+
 pip install -r requirements.txt
 
 🔹 4. Set Environment Variables
@@ -187,10 +194,13 @@ http://localhost:8501
 Click “Start Research” and observe autonomous execution.
 
 🔹 6. Run with Docker (Optional)
+
 Build Image
+
 docker build -t agentic-ai-research .
 
 Run Container
+
 docker run -p 8501:8501 --env GROQ_API_KEY=your_key agentic-ai-research
 
 🔹 7. Deploy to Railway
@@ -223,4 +233,5 @@ Railway automatically builds and runs the Docker container.
 - Mini research paper (Markdown)
 
 - Confidence score + abstain logic
+
 
